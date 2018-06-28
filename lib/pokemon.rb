@@ -9,7 +9,7 @@ class Pokemon
     @db = db
     @id = id
 
-    # @@all << self
+    @@all << self
   end
 
   def self.all
