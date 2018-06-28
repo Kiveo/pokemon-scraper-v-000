@@ -22,13 +22,13 @@ class Pokemon
 
   def self.find(id, db)
 
-    # new_pokemon = Pokemon.new()
+    new_pokemon = Pokemon.new()
     pokemon_array = db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ")
-    # new_pokemon.id = pokemon[0]
-    # new_pokemon.name = pokemon[1]
-    # new_pokemon.type = pokemon[2]
+    new_pokemon.id = pokemon_array[0]
+    new_pokemon.name = pokemon_array[1]
+    new_pokemon.type = pokemon_array[2]
 
-    # new_pokemon
+    new_pokemon
   end
 
 end
