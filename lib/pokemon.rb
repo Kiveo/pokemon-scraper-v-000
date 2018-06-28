@@ -24,7 +24,7 @@ class Pokemon
 
     pokemon_array = db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ")
     new_pokemon = Pokemon.new(id: pokemon_array[0], name: pokemon_array[1], type: pokemon_array[2], db: db)
-    new_pokemon
+    new_pokemon[0]
   end
 
 end
