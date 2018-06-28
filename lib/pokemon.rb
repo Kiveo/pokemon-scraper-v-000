@@ -24,7 +24,7 @@ class Pokemon
   def self.find(id, db)
 
     pokemon_array = db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ").flatten
-    new_pokemon = Pokemon.new(id: pokemon_array[0], name: pokemon_array[1], type: pokemon_array[2], db: db)  #an array? Why?
+    new_pokemon = Pokemon.new(id: pokemon_array[0], name: pokemon_array[1], type: pokemon_array[2], db: db, hp: pokemon_array[3])
     new_pokemon
   end
 
