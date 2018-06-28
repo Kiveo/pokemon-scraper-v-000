@@ -2,7 +2,7 @@ class Pokemon
   attr_accessor :name, :type, :db, :id
 
   @@all = []
-  
+
   def initialize(name:, type:, db:, id:)
     @name = name
     @type = type
@@ -12,11 +12,10 @@ class Pokemon
     @@all << self
   end
 
-  def self.all 
-    @@all 
-  end 
-  
+  def self.all
+    @@all
+  end
+
   def self.save
-    ...
-    
+    @db.execute("INSERT INTO pokemon () VALUES () ; ", id:, name:, type: )
 end
