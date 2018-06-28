@@ -1,4 +1,4 @@
-require_relative 'pry'
+require 'pry'
 
 class Pokemon
   attr_accessor :name, :type, :db, :id
