@@ -1,5 +1,3 @@
-require 'pry'
-
 class Pokemon
   attr_accessor :name, :type, :db, :id
 
@@ -26,7 +24,7 @@ class Pokemon
 
     new_pokemon = Pokemon.new()
     pokemon_array = db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ")
-    Binding.pry
+
     new_pokemon.id = pokemon_array[0]
     new_pokemon.name = pokemon_array[1]
     new_pokemon.type = pokemon_array[2]
