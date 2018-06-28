@@ -22,12 +22,10 @@ class Pokemon
 
   def self.find(id, db)
     new_pokemon = Pokemon.new
-    db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ").each {
-      |pokemon|
+    pokemon_array = db.execute("SELECT * FROM pokemon WHERE id = '#{id}'; ")
       new_pokemon.id: = pokemon[0]
       new_pokemon.name: = pokemon[1]
       new_pokemon.type: = pokemon[2]
-    }
     new_pokemon
   end
 
