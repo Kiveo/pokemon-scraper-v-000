@@ -19,3 +19,5 @@ end
 # OK. I didnt have an ID...so I got myself worked up. Lemme try rq please. SO SORRY about the audio
 #
 # LOL forgot id again   ...only diff here was missing id, so lets hope that was it.
+#
+# primary key, got it
